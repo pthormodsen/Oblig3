@@ -1,7 +1,27 @@
 public class LenketMengde<T> implements MengdeADT<T> {
+
+    public class Node {
+        private T data;
+        private Node neste;
+
+        private Node(T data){
+            this.data = data;
+            this.neste = null;
+        }
+    }
+
+    private Node forste;
+    private int antall;
+
+    public LenketMengde() {
+        forste = null;
+        antall = 0;
+    }
+
+
     @Override
     public boolean erTom() {
-        return false;
+        return antall == 0;
     }
 
     @Override

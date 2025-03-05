@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -136,7 +135,6 @@ class TabellMengdeTest {
 
     @Test
     void testFjern() {
-        // Legger til noen elementer
         mengde1.leggTil(1);
         mengde1.leggTil(2);
         mengde1.leggTil(3);
